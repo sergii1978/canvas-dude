@@ -13,7 +13,7 @@ sheet.fillRect(0, 0, canvas.width, canvas.height);
  */
 function drawHead() {
   sheet.beginPath();
-  sheet.arc(75, 75, 30, 0, Math.PI*2, true);
+  sheet.arc(75, 50, 50, 0, Math.PI*2, true);
   sheet.stroke();
 }
 
@@ -23,7 +23,7 @@ function drawHead() {
 function drawBody() {
   sheet.beginPath();
   sheet.moveTo(75, 105);
-  sheet.lineTo(75, 180);
+  sheet.lineTo(75,180);
   sheet.stroke();
 }
 
@@ -64,5 +64,30 @@ function drawRightLeg() {
   sheet.beginPath();
   sheet.moveTo(75, 180);
   sheet.lineTo(100, 250);
+  sheet.stroke();
+}
+/**
+ * Рисует левый глаз
+ */
+function drawLeftEye() {
+  sheet.beginPath();
+  sheet.arc(50, 50, 20, 0, Math.PI, true);
+  sheet.stroke();
+}
+/**
+ * Рисует правый глаз
+ */
+function drawRightEye() {
+  sheet.beginPath();
+  sheet.arc(100, 50, 20, 0, Math.PI, true);
+  sheet.stroke();
+}
+/**
+ * Рисует нос
+ */
+function drawNose() {
+  sheet.beginPath();
+  sheet.moveTo(75, 40);
+  sheet.lineTo(75,70);
   sheet.stroke();
 }
